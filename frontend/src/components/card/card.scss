@@ -5,6 +5,8 @@
     border-radius: 8px;
     padding: 20px;
     img {
+        display: block;
+        margin: 0 auto;
         width: 140px;
     }
     &__title {
@@ -18,5 +20,9 @@
         font-weight: 700;
         font-size: 14px;
         line-height: 20px;
+    }
+    &-white {
+        background-color: #fff;
+        filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.25));
     }
 }

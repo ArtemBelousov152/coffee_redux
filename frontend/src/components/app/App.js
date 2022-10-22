@@ -1,14 +1,20 @@
 import React from 'react';
-import {MainPage} from '../pages';
+import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 
-
-
+import {MainPage, OurCoffeePage, SingleCoffee, ForYourPleasure} from '../pages';
 import './App.scss';
 
 function App() {
     return (
         <div className='app'>
-            <MainPage/>
+            <Router>
+                <Routes>
+                    <Route path='/' element={<MainPage/>}/> 
+                    <Route path='/ourcoffee' element={<OurCoffeePage/>}/>
+                    {/* <SingleCoffee/> */}
+                    <Route path='/yourepleasure' element={<ForYourPleasure/>}/>
+                </Routes>
+            </Router>
         </div>
     );
 }

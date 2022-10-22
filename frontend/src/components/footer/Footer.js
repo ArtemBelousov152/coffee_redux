@@ -4,10 +4,10 @@ import Divider from '../divider/Divider';
 
 const Footer = () => {
     return(
-        <div className='footer'>
+        <footer className='footer'>
             <NavMenu/>
             <Divider/>
-        </div>
+        </footer>
     )
 }
 

@@ -1,0 +1,33 @@
+.about {
+    padding-top: 80px;
+    display: grid;
+    grid-template-columns: auto 340px;
+    column-gap: 70px;
+    align-items: start;
+    position: relative;
+    &__descr {
+        text-align: center;
+        p {
+            font-size: 14px;
+            line-height: 20px;
+            text-align: center;
+        }
+    }
+    &__title {
+        font-size: 24px;
+        line-height: 35px;
+    }
+    &__divider {
+        &::after {
+            content: '';
+            display: block;
+            background-color: black;
+            height: 2px;
+            width: 300px;
+            position: absolute;
+            bottom: -60px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}

@@ -1,0 +1,15 @@
+.cards {
+    height: 673px;
+    margin-top: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__list {
+        list-style-type: none;
+        display: grid;
+        grid-template-columns: repeat(3, 220px);
+        column-gap: 70px;
+        row-gap: 60px; 
+        margin-top: 60px;
+    }
+}
