@@ -1,0 +1,27 @@
+.navMenu {
+    display: flex;
+    list-style-type: none;
+    position: relative;
+    margin-left: 31px;
+    width: 355px;
+    justify-content: space-between;
+    &__item {
+        transition: all .5s;
+        &:hover {
+           transform: scale(1.1);
+        }
+    }
+    &__link {
+        font-style: normal;
+        font-size: 14px;
+        line-height: 17px;
+        text-decoration: none;
+        
+    }
+    &__img {
+        position: absolute;
+        left: -34px;
+        bottom: -5px;
+        font-size: 46px;
+    }
+}

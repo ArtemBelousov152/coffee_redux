@@ -1,0 +1,50 @@
+.header {
+    height: 500px;
+    background: url('../../img/bg/MainBg.jpg') center center / cover no-repeat;
+    padding: 52px 0 201px 0;
+    color: white;
+    text-align: center;
+    &__nav {
+        margin-left: 149px;
+    }
+    &__title {
+        margin-top: 111px;
+        margin-bottom: 0;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 58px;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    &__descr {
+        margin-top: 28px;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 52px;
+        span {
+            font-size: 24px;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            margin-top: 20px;
+        }
+    }
+    &__link {
+        color: white;
+        text-decoration: none;
+        display: block;
+        width: 120px;
+        height: 30px;
+        border: solid 1px white;
+        border-radius: 5px;
+        margin: 18px auto 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        transition: all .5s;
+        .inner {
+            font-size: 14px;
+        }
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
