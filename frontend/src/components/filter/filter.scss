@@ -1,7 +1,7 @@
 .filters {
     display: flex;
     justify-content: space-between;
-    width: 693px;
+    width: 720px;
     &__textArea {
         display: flex;
         justify-content: space-between;
@@ -38,7 +38,7 @@
         &:nth-last-child(1) {
             border-radius: 0 5px 5px 0;
         }
-        &:nth-last-child(3) {
+        &:nth-last-child(4) {
             border-radius: 5px 0 0 5px;
         }
         &:hover {

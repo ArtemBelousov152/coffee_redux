@@ -1,29 +1,25 @@
-import Card from '../card/Card';
+import { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { filteredCoffeeSelector, coffeeFetch } from './coffeeListSlice';
+import useRenderCards from '../../hooks/useRenderCards'; 
 
 import './cardsList.scss';
 
 const CardsList = () => {
+    const dispatch = useDispatch();
+    const {coffeeLoadingStatus} = useSelector(state => state.coffee);
+    const filteredCoffee = useSelector(filteredCoffeeSelector)
+
+    useEffect(() => {
+        dispatch(coffeeFetch());
+    },[])
+
+    
+    const element = useRenderCards(coffeeLoadingStatus, filteredCoffee);
     return(
         <div className="wrapper">
             <ul className="cards__list">
-                <li className="cards__item">
-                    <Card flag={true}/>
-                </li>
-                <li className="cards__item">
-                    <Card flag={true}/>
-                </li>
-                <li className="cards__item">
-                    <Card flag={true}/>
-                </li>
-                <li className="cards__item">
-                    <Card flag={true}/>
-                </li>
-                <li className="cards__item">
-                    <Card flag={true}/>
-                </li>
-                <li className="cards__item">
-                    <Card flag={true}/>
-                </li>
+                {element}
             </ul>
         </div>
     )

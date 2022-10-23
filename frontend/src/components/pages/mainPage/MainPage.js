@@ -1,11 +1,14 @@
 import Header from "../../header/Header";
 import Divider from "../../divider/Divider";
-import Card from "../../card/Card";
+import BestCoffee from "../../bestCoffee/BestCoffee";
 
 import './mainPage.scss'
 import Footer from "../../footer/Footer";
 
 const MainPage = () => {
+    
+
+
     return (
         <div className="mainPage">
             <Header/>
@@ -32,11 +35,7 @@ const MainPage = () => {
                 </div>
                 <div className="mainPage__ourBest">
                     <h2 className="mainPage__ourBest-title">Our best</h2>
-                    <ul className="mainPage__ourBest-cardList">
-                        <li><Card/></li>
-                        <li><Card/></li>
-                        <li><Card/></li>
-                    </ul>
+                    <BestCoffee/>
                 </div>
             </main>
             <Footer/>

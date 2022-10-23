@@ -5,13 +5,14 @@ import {MainPage, OurCoffeePage, SingleCoffee, ForYourPleasure} from '../pages';
 import './App.scss';
 
 function App() {
+
     return (
         <div className='app'>
             <Router>
                 <Routes>
                     <Route path='/' element={<MainPage/>}/> 
                     <Route path='/ourcoffee' element={<OurCoffeePage/>}/>
-                    {/* <SingleCoffee/> */}
+                    <Route path='/ourcoffee/:id' element={<SingleCoffee/>}/>
                     <Route path='/yourepleasure' element={<ForYourPleasure/>}/>
                 </Routes>
             </Router>
