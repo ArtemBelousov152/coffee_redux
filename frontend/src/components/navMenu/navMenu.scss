@@ -25,3 +25,23 @@
         font-size: 46px;
     }
 }
+
+@media (max-width: 576px) {
+    .navMenu {
+        &__item {
+            &:hover {
+                transform: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .navMenu {
+        width: 315px;
+        margin-left: 0;
+        &__img {
+            display: none;
+        }
+    }
+}

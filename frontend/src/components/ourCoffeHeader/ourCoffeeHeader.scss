@@ -9,3 +9,25 @@
         margin-top: 60px;
     }
 }
+
+@media (max-width: 768px) {
+    .ourCoffeeHeader {
+        height: 200px;
+        padding: 20px 0 50px 0;
+        &__title {
+            font-size: 35px;
+            line-height: 45px;
+            margin-top: 45px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .ourCoffeeHeader {
+        height: 170px;
+        &__title {
+            font-size: 30px;
+            margin-top: 30px;
+        }
+    }
+}

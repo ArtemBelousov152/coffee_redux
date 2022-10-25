@@ -31,3 +31,31 @@
         }
     }
 }
+
+@media (max-width: 992px) {
+    .about {
+        padding-top: 40px;
+        grid-template-columns: auto;
+        justify-items: center;
+        &__descr {
+            width: 600px;
+            margin-top: 20px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .about {
+        &__descr {
+            width: 400px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .about {
+        &__descr {
+            width: 300px;
+        }
+    }
+}

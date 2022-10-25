@@ -27,6 +27,7 @@
     &__btn {
         font-family: 'Merienda';
         background-color: #fff;
+        color: black;
         border: none;
         width: 75px;
         height: 30px;
@@ -55,5 +56,42 @@
     .active {
         background-color: black;
         color: white;
+    }
+}
+
+@media (max-width: 768px) {
+    .filters {
+        width: 400px;
+        display: grid;
+        grid-template-columns: auto;
+        row-gap: 30px;
+        &__textArea {
+            justify-content: center;
+        }
+        &__btns {
+            &-wrapper {
+                display: flex;
+            }
+        }
+        &__btn {
+            &:hover {
+                background-color: black;
+                color: #fff;
+                transform: scale(1);
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .filters {
+        width: 300px;
+        &__btns {
+            width: 310px;
+            flex-direction: column;
+            &-wrapper {
+                margin-top: 20px;
+            }
+        }
     }
 }

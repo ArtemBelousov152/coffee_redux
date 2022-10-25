@@ -1,5 +1,6 @@
 import NavMenu from '../navMenu/NavMenu';
 import Divider from '../divider/Divider';
+import { Link } from 'react-router-dom';
 
 import './header.scss'
 
@@ -15,9 +16,9 @@ const Header = () => {
                 We makes every day full of energy and taste <br/>
                 <span>Want to try our beans?</span>
             </div>
-            <a className='header__link' href="#">
+            <Link className='header__link' to='/ourcoffee'>
                 <div className="inner">More</div>
-            </a>
+            </Link>
         </header>
         
     )

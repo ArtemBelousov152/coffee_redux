@@ -29,7 +29,6 @@
     &__link {
         color: white;
         text-decoration: none;
-        display: block;
         width: 120px;
         height: 30px;
         border: solid 1px white;
@@ -45,6 +44,58 @@
         }
         &:hover {
             transform: scale(1.1);
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .header {
+        &__nav {
+            margin-left: 0;
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        height: 500px;
+        &__title {
+            margin-top: 50px;
+            font-size: 30px;
+        }
+        &__descr {
+            font-size: 22px;
+            span {
+                font-size: 22px;
+            }
+        }
+        &__link {
+            width: 100px;
+            height: 30px;
+            &:hover {
+                transform: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .header {
+        &__title {
+            margin-top: 20px;
+            font-size: 25px;
+            line-height: 40px;
+        }
+        &__descr {
+            margin-top: 20px;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 40px;
+            span {
+                font-size: 18px;
+            }
         }
     }
 }

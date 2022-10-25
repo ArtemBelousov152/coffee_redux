@@ -49,7 +49,9 @@ const Filter = () => {
             </div>
             <div className="filters__btns">
                 <div className="filters__descr">Or filter</div>
-                {renderFilters(filters, filtersLoadingStatus)}
+                <div className="filters__btns-wrapper">
+                    {renderFilters(filters, filtersLoadingStatus)}
+                </div>
             </div>
         </div>
     )
