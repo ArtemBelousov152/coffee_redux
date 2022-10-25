@@ -9,7 +9,7 @@ const useRenderCards = (loadingStatus, coffeeArray) => {
             return <div>Ошибка загрузки</div>
     }
     if (coffeeArray.length === 0) {
-        return <h5 >Героев пока нет</h5>
+        return <h5 >Коффе пока нет</h5>
     }
     return coffeeArray.map(({id, ...props}) => {
         return <li className="cards__item">

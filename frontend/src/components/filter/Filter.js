@@ -1,13 +1,14 @@
 import {useEffect} from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchFilters, changeActiveFilter } from './filterSlice';
+import { fetchFilters, changeActiveFilter, changeSearchValue } from './filterSlice';
 import { selectAll } from './filterSlice';
+import classNames from "classnames";
 
 import './filter.scss';
 
 const Filter = () => {
     const dispatch = useDispatch();
-    const {filtersLoadingStatus} = useSelector(state => state.filters)
+    const {filtersLoadingStatus, activeFilter} = useSelector(state => state.filters)
     const filters = useSelector(selectAll);
 
     useEffect(() => {
@@ -25,9 +26,13 @@ const Filter = () => {
             return <h5 >Фильтров пока нет</h5>
         }
         return filtersArray.map(({id, name}) => {
+            const filterClass = classNames({
+                'active': name === activeFilter
+            })
+
             return <button
                         key={id} 
-                        className="filters__btn"
+                        className={`filters__btn ${filterClass}`}
                         onClick={() => {dispatch(changeActiveFilter(name))}}
                     >{name}</button>
         })
@@ -37,7 +42,10 @@ const Filter = () => {
         <div className="filters">
             <div className="filters__textArea">
                 <div className="filters__descr">Looking for</div>
-                <input type="textArea" placeholder='start typing here...'/>
+                <input 
+                    type="textArea" 
+                    placeholder='start typing here...'
+                    onChange={(e) => dispatch(changeSearchValue(e.target.value))}/>
             </div>
             <div className="filters__btns">
                 <div className="filters__descr">Or filter</div>

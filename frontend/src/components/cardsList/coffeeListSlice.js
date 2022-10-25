@@ -40,11 +40,23 @@ const {reducer} = coffeeSlice;
 
 export const {selectAll, selectById} = coffeeAdapter.getSelectors(state => state.coffee)
 
+const filterSearchCoffee = createSelector(
+    (state) => state.filters.searchValue,
+    selectAll,
+    (search, coffee) => {
+        if (search === '') {
+            return coffee
+        } else {
+            return coffee.filter(item => item.name.toLowerCase().indexOf(search, 0) !== -1)
+        }
+    }
+)
+
 export const filteredCoffeeSelector = createSelector(
     (state) => state.filters.activeFilter,
-    selectAll,
+    filterSearchCoffee,
     (filter, coffee) => {
-        if (filter === "all") {
+        if (filter === "All") {
             return coffee
         } else {
             return coffee.filter(item => item.country === filter)

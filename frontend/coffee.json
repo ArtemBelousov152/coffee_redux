@@ -1,42 +1,42 @@
 {
     "coffee": [
         {
-            "id": "1",
-            "name": "AROMISTICO Coffee",
+            "id": "3b2e6a33-91cb-43b9-ad02-4953ec961777",
+            "name": "EPIFANITO Coffee",
             "weight": "2 kg",
             "price": "19.73",
             "country": "Brazil"
         },
         {
-            "id": "2",
+            "id": "61fc7c8f-b8cd-4bd2-96cf-d5e260a22e12",
             "name": "AROMISTICO Coffee",
             "weight": "1 kg",
             "price": "10.73",
             "country": "Kenya"
         },
         {
-            "id": "3",
-            "name": "AROMISTICO Coffee",
+            "id": "5279579a-b551-4227-a47d-2eb65534dec4",
+            "name": "VAJDAMENDA Coffee",
             "weight": "3 kg",
             "price": "26.73",
             "country": "Columbia"
         },
         {
-            "id": "4",
+            "id": "0aea9767-71c9-4cdf-a933-e0b0483132e8",
             "name": "AROMISTICO Coffee",
             "weight": "1 kg",
             "price": "6.73",
             "country": "Brazil"
         },
         {
-            "id": "5",
-            "name": "AROMISTICO Coffee",
+            "id": "e76cdd8f-1753-406e-9746-fd6338607bd1",
+            "name": "BANZAISIMO Coffee",
             "weight": "1 kg",
             "price": "6.73",
             "country": "Kenya"
         },
         {
-            "id": "6",
+            "id": "3f04547e-8eb9-48f7-bd72-92fc0f731413",
             "name": "AROMISTICO Coffee",
             "weight": "10 kg",
             "price": "89.73",
@@ -45,22 +45,25 @@
     ],
     "bestCoffee": [
         {
-            "id": "1",
+            "id": "17659774-e866-42e5-9ce2",
             "name": "Solimo Coffee Beans",
             "weight": "2 kg",
-            "price": "9.99"
+            "price": "9.99",
+            "country": "Brazil"
         },
         {
-            "id": "2",
+            "id": "24f8f1e5-2dd7-4b9d-9266",
             "name": "Presto Coffee Beans",
             "weight": "1 kg",
-            "price": "15.99"
+            "price": "15.99",
+            "country": "Kenya"
         },
         {
-            "id": "3",
+            "id": "c554697a-adf5-4a84-97cc",
             "name": "AROMISTICO Coffee",
             "weight": "1 kg",
-            "price": "6.73"
+            "price": "6.73",
+            "country": "Columbia"
         }
     ],
     "filters": [

@@ -37,6 +37,6 @@ const bestCoffeeSlice = createSlice({
 
 const {reducer} = bestCoffeeSlice;
 
-export const {selectAll} = bestCoffeeAdapter.getSelectors(state => state.bestCoffee);
+export const {selectAll, selectById} = bestCoffeeAdapter.getSelectors(state => state.bestCoffee);
 
 export default reducer;

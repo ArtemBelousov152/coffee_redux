@@ -42,7 +42,7 @@
             border-radius: 5px 0 0 5px;
         }
         &:hover {
-            background-color: black;
+            background-color: rgb(121, 121, 121);
             color: #fff;
             transform: scale(1.1);
         }
@@ -51,5 +51,9 @@
         margin-right: 25px;
         font-size: 14px;
         line-height: 20px;
+    }
+    .active {
+        background-color: black;
+        color: white;
     }
 }
