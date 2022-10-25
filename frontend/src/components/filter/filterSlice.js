@@ -13,7 +13,7 @@ export const fetchFilters = createAsyncThunk(
     'filters/fetchFilters',
     () => {
         const {request} = useHttp();
-        return request('http://localhost:3001/filters');
+        return request('/filters');
     }
 );
 

@@ -16,7 +16,7 @@ export const coffeeFetch = createAsyncThunk(
     'coffee/coffeeFetch',
     () => {
         const {request} = useHttp();
-        return request('http://localhost:3001/coffee')
+        return request('/coffee')
     }
 )
 
