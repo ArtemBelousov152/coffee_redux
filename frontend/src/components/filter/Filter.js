@@ -45,7 +45,7 @@ const Filter = () => {
                 <input 
                     type="textArea" 
                     placeholder='start typing here...'
-                    onChange={(e) => dispatch(changeSearchValue(e.target.value))}/>
+                    onChange={(e) => dispatch(changeSearchValue(e.target.value.toLowerCase()))}/>
             </div>
             <div className="filters__btns">
                 <div className="filters__descr">Or filter</div>
